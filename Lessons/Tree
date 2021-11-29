@@ -7,8 +7,11 @@
 # Tree
 ## Intro
 ### What is a Tree?
+Trees are non-linear data structures represented by nodes connected by edges. A tree has one node that is marked as a Root Node with every other node associated with one parent node. When talking about trees every node can have an arbitrary number of child nodes, but for this example, we will be focusing on binary trees (where every node can have 0, 1, or 2 children nodes).
 ### Real-world uses for Tree
-### Limitations of Queues
+An example of a tree that comes to mind is the rankings of sports teams during a tournament. As the tournament goes on you will have an organized tree of where each team participating loses to another eventually resulting in a single team being at the top. By looking at this data you could determine the skill level of each team compared to the other participating teams.
+### Limitations of Trees
+By adding new values to a tree, the tree can become unbalanced (or unsymmetrical). To rebalance a tree it must be taken apart and put back together. Additionally, if you want to add an item in the middle of a tree you will either need to add a new child node or restructure the children nodes below the desired node.
 
 ## Example
 ### Something Here
