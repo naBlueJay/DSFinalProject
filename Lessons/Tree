@@ -16,8 +16,111 @@ By adding new values to a tree, the tree can become unbalanced (or unsymmetrical
 ## Example
 ### Something Here
 ```python
+class BinaryTree:
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.left = None
+            self.right = None
+
+    def __init__(self):
+        self.root = None
+
+    def insert(self, data):
+        if self.root is None:
+            self.root = BinaryTree.Node(data)
+        else:
+            self._insert(data, self.root)
+```
+
+### Inserting item into tree
+```python
+def _insert(self, data, node):
+        if data != node.data:
+            if data < node.data:
+                if node.left is None:
+                    node.left = BinaryTree.Node(data)
+
+                else:
+                    self._insert(data, node.left)
+            else:
+                if node.right is None:
+                    node.right = BinaryTree.Node(data)
+
+                else:
+                    self._insert(data, node.right)
+    
+```
+
+### Check if item is contained in the tree
+```python
+def __contains__(self, data):
+        return self._contains(data, self.root)
+
+def _contains(self, data, node):
+    if data != node.data:
+        if data < node.data:
+            if node.left is None:
+                return False
+
+            else:
+                if self._contains(data, node.left) == True:
+                    return True
+
+                else:
+                    return False
+        else:
+            if node.right is None:
+                return False
+
+            else:
+                if self._contains(data, node.right) == True:
+                    return True
+                else:
+                    return False
+    else:
+        return True
+```
+### Traversing through the tree
+```python
+def __iter__(self):
+        yield from self._traverse_forward(self.root)
+        
+def _traverse_forward(self, node):
+    if node is not None:
+        yield from self._traverse_forward(node.left)
+        yield node.data
+        yield from self._traverse_forward(node.right)
+    
+def __reversed__(self):    
+    yield from self._traverse_backward(self.root)
+
+def _traverse_backward(self, node):
+    if node is not None:
+        yield from self._traverse_backward(node.right)
+        yield node.data
+        yield from self._traverse_backward(node.left)
+```
+### Checking tree height
+```python
+def get_height(self):
+        if self.root is None:
+            return 0
+        else:
+            return self._get_height(self.root)
+
+def _get_height(self, node):
+    if node is None:
+        return 0
+    else:
+        leftAns = self._get_height(node.left)
+        rightAns = self._get_height(node.right)
+        
+        return max(leftAns, rightAns) + 1
 
 ```
+
+###
 
 ## Practice
 ### Something else Here
