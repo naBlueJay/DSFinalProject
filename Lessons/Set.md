@@ -7,12 +7,12 @@
 # Set
 ## Intro
 ### What is a Set?
-Sets are a built-in data type in Python that are used to store multiple items, or collections of data, as a single variable. The difference between sets and lists is that items in sets are unchangeable, but they can be removed or new items added, whereas items in lists can be changed. Also, where items contained in lists are ordered items in sets are not. Because sets are unordered they cannot contain duplicate items.
+Sets are a built-in data type in Python that are used to store multiple items, or collections of data, as a single variable. The difference between sets and lists is that items in sets are unchangeable, but they can be removed, or new items added, whereas items in lists can be changed. Also, where items contained in lists are ordered items in sets are not. Because sets are unordered, they cannot contain duplicate items.
 ### Real-world uses for Set
-A real-world example that comes to mind is a trading card collection. When opening packs of cards you want to add new cards to your collection, but want to avoid duplicate cards. Sets could be used to keep track of your collection so that you don’t have to continually look through your collection to see if a new card you pulled has already been added to your collection.
+A real-world example that comes to mind is a trading card collection. When opening packs of cards, you want to add new cards to your collection, but want to avoid duplicate cards. Sets could be used to keep track of your collection so that you don’t have to continually look through your collection to see if a new card you pulled has already been added to your collection.
  
 ### Limitations of Sets
-As mentioned above sets are unordered and cannot contain duplicates, resulting in a collection of unique items. If you are wanting to collect data with duplicate items you cannot use sets and must use another data structure. Likewise, if your data must be ordered you will not be able to use sets and must use another data structure.
+As mentioned above sets are unordered and cannot contain duplicates, resulting in a collection of unique items. If you are wanting to collect data with duplicate items, you cannot use sets and must use another data structure. Likewise, if your data must be ordered you will not be able to use sets and must use another data structure.
 
 ## Example
 The following is an example of a set (notice how sets are written with the items enclosed in curly brackets):
@@ -31,7 +31,7 @@ Create a card collection using a set as a data structure:
 # Creating a set
 collection = set()
 
-# For this example we will be creating a set of pokemon cards. This list will be the initial collection.
+# For this example we will be creating a set of Pokémon cards. This list will be the initial collection.
 cards = ("Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise")
 ```
 Make sure the data structure you created is recognized as a set:
@@ -54,7 +54,7 @@ print(collection)
 ```
 Check to see if a card is already in the collection
 ```python
-# Checking if the collection contains a certian card
+# Checking if the collection contains a certain card
 print("Ivysaur has been collected:")
 print("Ivysaur" in collection)
 
@@ -96,3 +96,5 @@ print(collection)
 ```python
 # Task 6 Add any other tests you feel are necessary
 ```
+
+

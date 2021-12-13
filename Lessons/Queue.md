@@ -58,11 +58,11 @@ If you were using the python Queue package you wouldn't be able to check the ite
 print(sales_line.items)
 ```
 #### Queue len
-If using the python Queue package you could simply use the command
+If using the python Queue package, you could simply use the command
 ```python
 len(queue)
 ```
-But, because we are using a cusomt Queue class we have to adjust this slightly.
+But because we are using a custom Queue class we have to adjust this slightly.
 ```python
 # Checking the current Queue size
 print(len(sales_line.items))
@@ -93,7 +93,7 @@ print(sales_line.get_max_size())
 Side note: If you were to import the Queue package into python, using Queue(maxsize) would determine the maximum size the Queue is allowed to be. I left this functionality out of my QueueMain() class to prevent code lockups on testing, but feel free to play around with it yourself.
 
 ## Practice
-### Fastfood Restaurant Queue
+### Fast-food Restaurant Queue
 ```python
 class QueueMain():
     def __init__(self):
@@ -113,7 +113,7 @@ class QueueMain():
         pass
 ```
 ```python
-# Tak 1:
+# Task 1:
 # Place items on the Queue.
 
 ```
@@ -132,3 +132,5 @@ class QueueMain():
 # ?Check the maximum length reached by the queue.
 
 ```
+
+
